@@ -22,17 +22,5 @@
     "price": 456.78,
     "thumbnail": "https://cdn1.iconfinder.com/data/icons/construction-tool-line-foreman-equipment/512/Helmet_safety-512.png",
     "id": 4
-  },
-  {
-    "title": "puerta",
-    "price": "",
-    "thumbnail": "",
-    "id": 5
-  },
-  {
-    "title": "puerta",
-    "price": "1200",
-    "thumbnail": "3393939983",
-    "id": 6
   }
 ]

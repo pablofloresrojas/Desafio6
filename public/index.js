@@ -5,13 +5,14 @@ const socketClient = io();
 //enviar producto a traves de sockets
 const productForm = document.getElementById("formProducto");
 productForm.addEventListener("submit", (event)=>{
+    
     event.preventDefault();
     const product = {
         title: document.getElementById("title").value,
         price: document.getElementById("price").value,
         thumbnail: document.getElementById("thumbnail").value
     }
-     console.log("product",product)
+     document.getElementById("formProducto").reset();
     //enviar el producto por medio de socket
     socketClient.emit("newProduct", product);
 });

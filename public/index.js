@@ -11,7 +11,7 @@ productForm.addEventListener("submit", (event)=>{
         price: document.getElementById("price").value,
         thumbnail: document.getElementById("thumbnail").value
     }
-    // console.log("product",product)
+     console.log("product",product)
     //enviar el producto por medio de socket
     socketClient.emit("newProduct", product);
 });

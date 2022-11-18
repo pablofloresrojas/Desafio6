@@ -106,12 +106,12 @@ io.on("connection", async(socket)=>{
 
     //recibir el producto
     socket.on("newProduct", async(data)=>{
+        console.log("nuevo producto: ",data)
         //data es el producto que recibo del formulario
         try {
-            const resp = await manejador.save(req.body);
-            res.status(resp.status).json(resp.message)
+            const resp = await manejador.save(data);
         } catch (error) {
-            res.status(error.status).send(error.message);
+            console.log("error: ",error)
         }
 
         //enviar todos los productos actualizados

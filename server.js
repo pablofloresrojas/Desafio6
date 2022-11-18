@@ -120,7 +120,6 @@ io.on("connection", async(socket)=>{
     })
 
     //chat
-    
     //enviar los mensajes al cliente
     socket.emit("messagesChat", await chat.getMessages());
 
